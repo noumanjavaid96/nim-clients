@@ -108,16 +108,16 @@ cd scripts
 
 ```bash
 python audio2face-2d.py \
-  --target <server_ip:port> \
-  --audio-input <input_audio_file_path> \
-  --portrait-input <input_portrait_image_file_path> \
-  --output <output_file_path_and_name> \
-  --head-rotation-animation-filepath <rotation_animation_filepath> \
-  --head-translation-animation-filepath <translation_animation_filepath> \
-  --ssl-mode <ssl_mode_value> \
-  --ssl-key <ssl_key_file_path> \
-  --ssl-cert <ssl_cert_filepath> \
-  --ssl-root-cert <ssl_root_cert_filepath>
+--target <server_ip:port> \
+--audio-input <input_audio_file_path> \
+--portrait-input <input_portrait_image_file_path> \
+--output <output_file_path_and_name> \
+--head-rotation-animation-filepath <rotation_animation_filepath> \
+--head-translation-animation-filepath <translation_animation_filepath> \
+--ssl-mode <ssl_mode_value> \
+--ssl-key <ssl_key_file_path> \
+--ssl-cert <ssl_cert_filepath> \
+--ssl-root-cert <ssl_root_cert_filepath>
 ```
 
 To view details of command line arguments, run this command:
@@ -130,8 +130,8 @@ python audio2face-2d.py -h
 The following command uses the sample audio and portrait file & generates an output.mp4 file in the current folder
 
 ```bash
-    python audio2face-2d.py --target 127.0.0.1:8001 --audio-input ../assets/sample_audio.wav --portrait-input ../assets/sample_portrait_image.png --output out.mp4 
-   ```
+  python audio2face-2d.py --target 127.0.0.1:8001 --audio-input ../assets/sample_audio.wav --portrait-input ../assets/sample_portrait_image.png --output out.mp4 
+ ```
 
 #### NodeJS
 - Go to the scripts directory
@@ -144,26 +144,26 @@ cd scripts
 
 ```bash
 node audio2face-2d.js \
-  --target <server_ip:port> \
-  --audio-input <input_audio_file_path> \
-  --portrait-input <input_portrait_image_file_path> \
-  --output <output_file_path_and_name> \
-  --format <wav/pcm> \
-  --head-rotation-animation-filepath <rotation_animation_file_path> \
-  --head-translation-animation-filepath <translation_animation_file_path> \
-  --ssl-mode <ssl_mode_value> \
-  --ssl-key <ssl_key_file_path> \
-  --ssl-cert <ssl_cert_file_path> \
-  --ssl-root-cert <ssl_root_cert_file_path>
- ```
+--target <server_ip:port> \
+--audio-input <input_audio_file_path> \
+--portrait-input <input_portrait_image_file_path> \
+--output <output_file_path_and_name> \
+--format <wav/pcm> \
+--head-rotation-animation-filepath <rotation_animation_file_path> \
+--head-translation-animation-filepath <translation_animation_file_path> \
+--ssl-mode <ssl_mode_value> \
+--ssl-key <ssl_key_file_path> \
+--ssl-cert <ssl_cert_file_path> \
+--ssl-root-cert <ssl_root_cert_file_path>
+```
 
 - Example command to process the packaged sample inputs
 
 The following command uses the sample audio and portrait file & generates an output.mp4 file in the current folder
 
 ```bash
-    node audio2face-2d.js --target 127.0.0.1:8001 --audio-input ../assets/sample_audio.wav --portrait-input ../assets/sample_portrait_image.png --output out.mp4 --format wav
- ```
+  node audio2face-2d.js --target 127.0.0.1:8001 --audio-input ../assets/sample_audio.wav --portrait-input ../assets/sample_portrait_image.png --output out.mp4 --format wav
+```
 
 The NodeJS client supports both `wav` and `pcm` audio formats. The `--format` option can be used to specify the format. The default format is `wav`. 
 
